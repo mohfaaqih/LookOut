@@ -4,128 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".create">
+    tools:context=".create"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="23dp">
 
-    <TextView
-        android:id="@+id/lbl_desc_create_todo"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/pop_light"
-        android:text="What's happening?"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@+id/et_title_create_todo"
-        app:layout_constraintTop_toBottomOf="@+id/et_title_create_todo" />
-
-    <TextView
-        android:id="@+id/txt_title_create"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/pop_light"
-        android:text="Posting"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_title_create_todo"
-        android:layout_width="349dp"
+        android:id="@+id/et_description"
+        android:layout_width="340dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit"
+        android:elevation="8dp"
+        android:ems="15"
+        android:fontFamily="@font/pop_med"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbl_desc_create_todo"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="340dp"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/edit"
         android:drawableStart="@drawable/profile"
         android:drawablePadding="15dp"
         android:elevation="8dp"
         android:ems="15"
-        android:fontFamily="@font/pop_light"
+        android:fontFamily="@font/pop_med"
         android:inputType="textPersonName"
         android:paddingStart="13dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="11sp"
-        app:layout_constraintBottom_toTopOf="@+id/lbl_desc_create_todo"
+        android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbl_title_create_todo"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintTop_toBottomOf="@+id/lbl_title_create_todo" />
 
     <TextView
         android:id="@+id/lbl_title_create_todo"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
         android:fontFamily="@font/pop_light"
         android:text="What should we call you?"
         android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="@+id/txt_title_create"
-        app:layout_constraintTop_toBottomOf="@+id/txt_title_create" />
-
-    <EditText
-        android:id="@+id/et_description_create_todo"
-
-        android:layout_width="351dp"
-        android:layout_height="236dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/edit"
-        android:paddingTop="10dp"
-        android:elevation="8dp"
-        android:ems="15"
-        android:fontFamily="@font/pop_light"
-        android:inputType="textMultiLine"
-        android:paddingStart="13dp"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbl_desc_create_todo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_submit_create_todo"
-        android:layout_width="144dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="64dp"
-        android:background="@drawable/button"
-        android:elevation="10dp"
+    <TextView
+        android:id="@+id/lbl_desc_create_todo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/pop_light"
-        android:text="Submit"
-        android:textAllCaps="false"
-        android:textSize="14dp"
-        app:backgroundTint="@color/black"
+        android:text="What's happening?"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_description_create_todo" />
-
-    <!--    <ImageButton-->
-    <!--        android:id="@+id/btn_post"-->
-    <!--        android:layout_width="70dp"-->
-    <!--        android:layout_height="70dp"-->
-    <!--        android:background="@drawable/post"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:layout_constraintEnd_toEndOf="parent"-->
-    <!--        app:layout_constraintHorizontal_bias="0.953"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toBottomOf="@+id/btn_submit_create_todo"-->
-    <!--        app:layout_constraintVertical_bias="0.717" />-->
+        app:layout_constraintTop_toBottomOf="@+id/et_username" />
 
     <ImageButton
-        android:id="@+id/btn_search"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/search"
+        android:id="@+id/btn_back"
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:background="@drawable/bck"
+        android:elevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintHorizontal_bias="0.897"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_submit_create_todo"
-        app:layout_constraintVertical_bias="0.717" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.932" />
+
+    <ImageButton
+        android:id="@+id/btn_submit"
+        android:layout_width="60dp"
+        android:layout_height="52dp"
+        android:background="@drawable/pst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.897"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
